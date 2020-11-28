@@ -8,7 +8,9 @@
 <!DOCTYPE html>
 <head>
 <!--  http://getbootstrap.com/docs/4.3/getting-started/ -->
-<link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integerity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZW17" crossorigin="anaymous">
+<link
+rel ="stylesheet" href ="./resources/css/bootstrap.min.css"
+integrity="sha384 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anaymous">
 <title> 상품 목록 </title>
 </head>
 <body>
@@ -32,6 +34,7 @@
 					Product product = listOfProducts.get(i);
 			%>
 				<div class="col-md-4">
+					<img src="./resources/images/<%=product.getFilename()%>" style="width: 100%" >
 					<h3><%= product.getPname() %></h3>
 					<p><%= product.getDescription() %>
 					<p><%= product.getUnitPrice() %>
